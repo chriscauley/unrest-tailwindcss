@@ -1,0 +1,36 @@
+.btn.loading {
+  overflow: hidden;
+  position: relative;
+  &:before, &:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  &:before {
+    background: rgba(128, 128, 128, 0.5);/* todo this shuld be tailwind variable */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    @apply -mt-4 -ml-4 w-8 h-8;
+    animation: _loadspin 1.1s infinite linear;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: transparent currentColor currentColor transparent;
+    height: 2em;
+    left: 50%;
+    top: 50%;
+    width: 2em;
+  }
+}
+
+@keyframes _loadspin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
