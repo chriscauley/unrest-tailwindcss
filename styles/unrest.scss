@@ -1,3 +1,9 @@
+body {
+  /* stops scrollbar from popping in and out when page height changes */
+  overflow-y: scroll;
+}
+
+/* button loading */
 .btn.loading {
   overflow: hidden;
   position: relative;
@@ -15,7 +21,7 @@
   }
   &:after {
     @apply -mt-4 -ml-4 w-8 h-8;
-    animation: _loadspin 1.1s infinite linear;
+    animation: btn_loadspin 1.1s infinite linear;
     border-radius: 50%;
     border: 3px solid;
     border-color: transparent currentColor currentColor transparent;
@@ -26,7 +32,7 @@
   }
 }
 
-@keyframes _loadspin {
+@keyframes btn_loadspin {
   0% {
     transform: rotate(0deg);
   }
