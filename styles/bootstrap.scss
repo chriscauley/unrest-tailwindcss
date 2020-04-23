@@ -111,3 +111,28 @@
 .h5 {
   @apply font-bold text-lg my-1;
 }
+
+/* cards */
+
+.card {
+  @apply max-w-sm rounded overflow-hidden shadow-lg;
+}
+
+.card .card-body {
+  @apply px-6 my-4;
+}
+
+.card .card-title {
+  @apply mb-2;
+  + .card-subtitle {
+    @apply -mt-1;
+  }
+}
+
+.card .card-subtitle {
+  @apply mb-2;
+}
+
+.card .card-text {
+  @apply mb-2
+}
