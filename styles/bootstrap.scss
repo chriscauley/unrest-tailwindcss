@@ -136,3 +136,12 @@
 .card .card-text {
   @apply mb-2
 }
+
+/* navbar */
+.navbar {
+  @apply p-4 flex justify-between items-center bg-gray-100;
+  .navbar-section {}
+  .navbar-brand {
+    @apply mr-2 font-bold text-blue-700 text-3xl;
+  }
+}
