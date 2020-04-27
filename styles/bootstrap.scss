@@ -145,3 +145,20 @@
     @apply mr-2 font-bold text-blue-700 text-3xl;
   }
 }
+
+/* list-group */
+.list-group {
+  @apply border rounded;
+  .list-group-item {
+    @apply border-b px-5 py-3 flex items-center justify-between;
+    &:last-child {
+      @apply border-b-0;
+    }
+    &.list-group-item-action {
+      @apply cursor-pointer;
+      &:hover {
+        @apply bg-gray-100;
+      }
+    }
+  }
+}
