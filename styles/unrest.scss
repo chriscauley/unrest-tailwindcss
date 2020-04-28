@@ -46,7 +46,7 @@ body {
 }
 
 .snackbar {
-  @apply fixed bottom-0 left-0 w-full;
+  @apply fixed bottom-0 left-0 w-full z-10;
   .container {
     @apply px-2 m-auto;
   }
