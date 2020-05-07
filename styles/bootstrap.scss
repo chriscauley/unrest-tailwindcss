@@ -3,7 +3,7 @@
  .control-label {
    @apply block text-gray-700 text-sm font-bold mb-2;
  }
- .form-control { /* input */
+ .form-control {
    @apply
    appearance-none
    bg-white
@@ -16,6 +16,9 @@
    w-full;
    &:focus {
      @apply outline-none shadow-outline;
+   }
+   &[type=range] {
+     @apply p-0 border-0 shadow-none;
    }
  }
  &.has-error > .form-control {
