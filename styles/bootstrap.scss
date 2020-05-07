@@ -26,36 +26,36 @@
  }
 }
 
-@mixin button-like($prefix) {
-  &.#{$prefix}-primary {
+@mixin button-like() {
+  &-primary {
     @apply text-white bg-blue-500;
     &:hover { @apply bg-blue-700; }
   }
-  &.#{$prefix}-secondary {
+  &-secondary {
     @apply text-white bg-gray-500;
     &:hover { @apply bg-gray-700; }
   }
-  &.#{$prefix}-success {
+  &-success {
     @apply text-white bg-green-500;
     &:hover { @apply bg-green-700; }
   }
-  &.#{$prefix}-danger {
+  &-danger {
     @apply text-white bg-red-600;
     &:hover { @apply bg-red-800; }
   }
-  &.#{$prefix}-warning {
+  &-warning {
     @apply text-black bg-yellow-500;
     &:hover { @apply bg-yellow-700; }
   }
-  &.#{$prefix}-info {
+  &-info {
     @apply text-white bg-teal-500;
     &:hover { @apply bg-teal-700; }
   }
-  &.#{$prefix}-light {
+  &-light {
     @apply text-black bg-gray-100;
     &:hover { @apply bg-gray-300; }
   }
-  &.#{$prefix}-dark {
+  &-dark {
     @apply text-white bg-gray-800;
     &:hover { @apply bg-gray-900; }
   }
@@ -63,14 +63,14 @@
 
 .btn {
   @apply font-bold py-2 px-4 rounded cursor-pointer;
-  @include button-like(btn);
+  @include button-like();
 }
 
 .badge {
   @apply rounded-full ml-2 inline-flex items-center justify-center;
   min-width: 1.5em;
   min-height: 1.5em;
-  @include button-like(badge)
+  @include button-like()
 }
 
 .btn.disabled {
@@ -163,16 +163,44 @@
 /* list-group */
 .list-group {
   @apply border rounded;
-  .list-group-item {
-    @apply border-b px-5 py-3 flex items-center justify-between;
-    &:last-child {
-      @apply border-b-0;
-    }
-    &.list-group-item-action {
-      @apply cursor-pointer;
-      &:hover {
-        @apply bg-gray-100;
-      }
+}
+
+.list-group-item {
+  @apply border-b px-5 py-3 flex items-center justify-between;
+  &:last-child {
+    @apply border-b-0;
+  }
+}
+
+.list-group-item-action {
+  @apply cursor-pointer;
+  &:hover {
+    @apply bg-gray-100;
+  }
+}
+
+.dropdown {
+  @apply relative;
+  .dropdown-toggle {
+    @extend .btn;
+    @extend .btn-light;
+    @apply cursor-pointer flex;
+  }
+  .dropdown-toggle:after {
+    @apply block absolute;
+    content: "";
+    border: 0.25em solid;
+    border-color: currentColor transparent transparent transparent;
+    margin-top: -0.125em;
+    right: 0.5em;
+    top: 50%;
+  }
+  .dropdown-menu {
+    @extend .list-group;
+    @apply absolute right-0 top-100 bg-white min-w-full w-56 z-10;
+    .dropdown-item {
+      @extend .list-group-item;
+      @extend .list-group-item-action;
     }
   }
 }
