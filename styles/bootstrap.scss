@@ -66,6 +66,12 @@
   @include button-like();
 }
 
+.btn.circle {
+  @apply flex items-center justify-center rounded-full;
+  width: 1.5em;
+  height: 1.5em;
+}
+
 .badge {
   @apply rounded-full ml-2 inline-flex items-center justify-center;
   min-width: 1.5em;
