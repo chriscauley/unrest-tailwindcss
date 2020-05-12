@@ -1,6 +1,19 @@
 body {
   /* stops scrollbar from popping in and out when page height changes */
   overflow-y: scroll;
+  @apply bg-gray-200; // bg-body
+}
+
+html, body, #react-app {
+  min-height: 100%
+}
+
+#react-app {
+  @apply flex flex-col mx-auto;
+  background: white; /* bg-app */
+  > .app-content {
+    flex-grow: 1;
+  }
 }
 
 /* button loading */
