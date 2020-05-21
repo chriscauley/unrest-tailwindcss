@@ -80,11 +80,15 @@ code {
   height: 1.5em;
 }
 
-.badge {
+.badge, .pill {
   @apply rounded-full ml-2 inline-flex items-center justify-center;
   min-width: 1.5em;
   min-height: 1.5em;
   @include button-like()
+}
+
+.pill {
+  @apply px-2 leading-relaxed;
 }
 
 .btn.disabled {

@@ -16,6 +16,22 @@ html, body, #react-app {
   }
 }
 
+.loading-box {
+  @apply relative flex items-center justify-center;
+  min-height: 4em;
+  &:after {
+    content: "";
+    @apply absolute block -mt-4 -ml-4 w-8 h-8 rounded-full;
+    animation: btn_loadspin 1.1s infinite linear;
+    border: 3px solid;
+    border-color: transparent currentColor currentColor transparent;
+    height: 2em;
+    left: 50%;
+    top: 50%;
+    width: 2em;
+  }
+}
+
 /* button loading */
 .btn.loading {
   overflow: hidden;
@@ -73,4 +89,12 @@ html, body, #react-app {
       opacity: 0;
     }
   }
+}
+
+.link, p > a {
+  @apply text-blue-500 cursor-pointer;
+}
+
+p > a {
+  @apply underline
 }
