@@ -3,7 +3,8 @@ p {
 }
 
 code {
-  @apply bg-gray-400 text-pink-600 px-2 pt-1 leading-none;
+  @apply bg-gray-400 text-pink-600 px-1;
+  padding-top: 0.125rem;
 }
 
 .form-group {
@@ -224,4 +225,13 @@ h6, .h6 {
       @extend .list-group-item-action;
     }
   }
+}
+
+.table {
+  td, th {
+    @apply border-t p-3;
+  }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  @apply bg-gray-300;
 }

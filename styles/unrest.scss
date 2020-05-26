@@ -98,3 +98,23 @@ html, body, #react-app {
 p > a {
   @apply underline
 }
+
+.markdown {
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  ul, ol {
+    @apply pl-6;
+    li {
+      @apply mb-2;
+    }
+  }
+}
+
+blockquote {
+  @apply p-4 border-l-8 mb-6;
+  p:last-child { margin-bottom: 0; }
+}
