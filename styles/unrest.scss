@@ -118,3 +118,17 @@ blockquote {
   @apply p-4 border-l-8 mb-6;
   p:last-child { margin-bottom: 0; }
 }
+
+.divider {
+  @apply flex items-center w-full;
+  &:before, &:after {
+    content: "";
+    @apply flex-grow border-b;
+  }
+  &:before {
+    @apply mr-4;
+  }
+  &:after {
+    @apply ml-4;
+  }
+}
