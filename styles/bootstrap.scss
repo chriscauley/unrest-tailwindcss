@@ -206,7 +206,7 @@ h6, .h6 {
   .dropdown-toggle {
     @extend .btn;
     @extend .btn-light;
-    @apply cursor-pointer flex;
+    @apply cursor-pointer flex pr-6;
   }
   .dropdown-toggle:after {
     @apply block absolute;
