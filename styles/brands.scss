@@ -1,0 +1,25 @@
+.login-button {
+  @apply mb-4 flex items-center;
+  i {
+    @apply text-2xl mr-4;
+  }
+}
+
+.btn-github {
+  background: #333;
+  color: white;
+}
+
+.btn-google, .btn-google-oauth2 {
+  background: #4285f4;
+  color: white;
+}
+
+.btn-twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.fa-google-oauth2:before {
+  content: "\f1a0";
+}
