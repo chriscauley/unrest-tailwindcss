@@ -132,3 +132,7 @@ blockquote {
     @apply ml-4;
   }
 }
+
+.fa-admin {
+  &:before { content: "\f1c0" }
+}
