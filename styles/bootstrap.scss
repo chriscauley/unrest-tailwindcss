@@ -9,30 +9,33 @@ code {
 
 .form-group {
   @apply mb-4;
- .control-label {
-   @apply block text-gray-400 text-sm font-bold mb-2;
- }
- .form-control {
-   @apply
-   appearance-none
-   bg-white
-   border
-   leading-tight
-   py-2 px-3
-   rounded
-   shadow
-   text-gray-700
-   w-full;
-   &:focus {
-     @apply outline-none shadow-outline;
-   }
-   &[type=range] {
-     @apply p-0 border-0 shadow-none;
-   }
- }
- &.has-error > .form-control {
-   @apply border-red-500 mb-3;
- }
+  .control-label {
+    @apply block text-gray-400 text-sm font-bold mb-2;
+  }
+  .form-control {
+    @apply
+    appearance-none
+    bg-white
+    border
+    leading-tight
+    py-2 px-3
+    rounded
+    shadow
+    text-gray-700
+    w-full;
+    &:focus {
+      @apply outline-none shadow-outline;
+    }
+    &[type=range] {
+      @apply p-0 border-0 shadow-none;
+    }
+  }
+  &.has-error > .form-control {
+    @apply border-red-500 mb-3;
+  }
+  [type=checkbox], [type=radio] {
+    margin-right: 0.5em;
+  }
 }
 
 @mixin button-like() {
@@ -240,9 +243,9 @@ h6, .h6 {
   @apply fixed w-full h-full top-0 left-0 flex items-center justify-center z-50 p-8;
 
   .modal-mask {
-    @apply absolute w-full h-full cursor-pointer bg-gray-600 opacity-25;
+    @apply absolute w-full h-full cursor-pointer bg--text opacity-25;
   }
   .modal-content {
-    @apply p-4 bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full;
+    @apply p-4 bg--bg mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full;
   }
 }

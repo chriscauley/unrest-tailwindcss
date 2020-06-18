@@ -2,6 +2,6 @@ var tailwindcss = require('tailwindcss')
 
 module.exports = {
   plugins: [
-    tailwindcss()
+    tailwindcss(__dirname + '/tailwind.config.js')
   ]
 }

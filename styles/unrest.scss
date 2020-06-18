@@ -136,3 +136,7 @@ blockquote {
 .fa-admin {
   &:before { content: "\f1c0" }
 }
+
+.form-group .checkbox > label {
+  cursor: pointer;
+}
