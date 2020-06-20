@@ -91,7 +91,10 @@ html, body, #react-app {
   }
 }
 
-.link, p > a {
+.link,
+p > a,
+ul.browser-default a,
+ol.browser-default a {
   @apply text-blue-500 cursor-pointer;
 }
 
@@ -99,18 +102,23 @@ p > a {
   @apply underline
 }
 
-.markdown {
-  ul {
-    @apply list-disc;
-  }
-  ol {
-    @apply list-decimal;
-  }
-  ul, ol {
-    @apply pl-6;
-    li {
-      @apply mb-2;
-    }
+.markdown ul,
+ul.browser-default {
+  @apply list-disc;
+}
+
+.markdown ol,
+ol.browser-default {
+  @apply list-decimal;
+}
+
+.markdown ul,
+ul.browser-default,
+.markdown ol,
+ol.browser-default {
+  @apply list-inside;
+  li {
+    @apply mb-2;
   }
 }
 
