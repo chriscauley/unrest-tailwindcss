@@ -6,6 +6,11 @@
 @import "./unrest.scss";
 @import "./brands.scss";
 
+:root {
+  --bg: white;
+  --text: black;
+}
+
 /* maybe move into tailwind config */
 .bottom-100 {
   bottom: 100%;
