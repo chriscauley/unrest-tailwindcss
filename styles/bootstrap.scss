@@ -252,3 +252,46 @@ h6, .h6 {
     @apply p-4 bg--bg mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full;
   }
 }
+
+/* bootstrap grid used in rjsf. Not sure if I want to use elsewhere */
+.rjsf {
+  .field-array-of-integer {
+    @apply max-w-lg;
+  }
+  .array-item {
+    @apply -mx-2 flex;
+    .form-group {
+      @apply mb-0;
+    }
+    .col-xs-9, .col-xs-3 {
+      @apply p-2;
+    }
+    .col-xs-3 {
+      @apply w-1/4;
+      .btn {
+        height: 38px;
+      }
+    }
+    .col-xs-9 {
+      @apply w-3/4;
+    }
+  }
+}
+
+/* rjsf uses these in array fields. Here they are replaced with font-awesome */
+.rjsf {
+  .glyphicon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .glyphicon.glyphicon-remove:before {
+    content: "\f00d";
+  }
+  .glyphicon.glyphicon-plus:before {
+    content: "\f067";
+  }
+}
