@@ -10,7 +10,7 @@ code {
 .form-group {
   @apply mb-4;
   .control-label {
-    @apply block text-gray-400 text-sm font-bold mb-2;
+    @apply block text-gray-600 text-sm font-bold mb-2;
   }
   .form-control {
     @apply
@@ -247,9 +247,15 @@ h6, .h6 {
 
   .modal-mask {
     @apply absolute w-full h-full cursor-pointer bg--text opacity-25;
+    .cursor-default {
+      @apply cursor-default
+    }
   }
   .modal-content {
     @apply p-4 bg--bg mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full;
+  }
+  &.absolute {
+    @apply absolute;
   }
 }
 
