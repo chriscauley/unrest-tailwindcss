@@ -209,16 +209,14 @@ h6, .h6 {
   .dropdown-toggle {
     @extend .btn;
     @extend .btn-light;
-    @apply cursor-pointer flex pr-6;
+    @apply cursor-pointer flex items-center;
   }
   .dropdown-toggle:after {
-    @apply block absolute;
+    @apply block ml-2;
     content: "";
-    border: 0.25em solid;
-    border-color: currentColor transparent transparent transparent;
-    margin-top: -0.125em;
-    right: 0.5em;
-    top: 50%;
+    border: 0.25rem solid transparent;
+    border-bottom-width: 0;
+    border-top-color: currentColor;
   }
   .dropdown-menu {
     @extend .list-group;
