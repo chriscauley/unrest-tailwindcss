@@ -7,8 +7,24 @@
 @import "./brands.scss";
 
 :root {
-  --bg: white;
-  --text: black;
+  --bg: theme('colors.gray.100');
+  --bg-alt: theme('colors.gray.200');
+  --text: theme('colors.gray.900');
+  --text-alt: theme('colors.gray.700');
+  --border: theme('colors.gray.300');
+}
+
+.theme-dark_mode {
+  --bg: theme('colors.gray.900');
+  --bg-alt: theme('colors.gray.700');
+  --text: theme('colors.gray.100');
+  --text-alt: theme('colors.gray.300');
+  --border: theme('colors.gray.800');
+}
+
+
+*, ::before, ::after {
+  border-color: var(--border)
 }
 
 /* maybe move into tailwind config */

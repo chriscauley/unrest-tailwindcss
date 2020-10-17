@@ -9,8 +9,7 @@ html, body, #react-app {
 }
 
 #react-app {
-  @apply flex flex-col mx-auto;
-  background: white; /* bg-app */
+  @apply flex flex-col mx-auto bg--bg text--text;
   > .app-content {
     flex-grow: 1;
   }
@@ -94,7 +93,8 @@ html, body, #react-app {
 .link,
 p > a,
 ul.browser-default a,
-ol.browser-default a {
+ol.browser-default a,
+.markdown a {
   @apply text-blue-500 cursor-pointer;
 }
 

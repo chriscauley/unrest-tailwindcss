@@ -1,6 +1,8 @@
 const colors = [
   'bg',
+  'bg-alt',
   'text',
+  'text-alt',
   'border',
 ]
 

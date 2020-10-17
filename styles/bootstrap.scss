@@ -3,25 +3,25 @@ p {
 }
 
 code {
-  @apply bg-gray-400 text-pink-600 px-1;
+  @apply bg--bg-alt text-pink-600 px-1;
   padding-top: 0.125rem;
 }
 
 .form-group {
   @apply mb-4;
   .control-label {
-    @apply block text-gray-600 text-sm font-bold mb-2;
+    @apply block text--text-alt text-sm font-bold mb-2;
   }
   .form-control {
     @apply
     appearance-none
-    bg-white
+    bg--bg
     border
     leading-tight
     py-2 px-3
     rounded
     shadow
-    text-gray-700
+    text--text-alt
     w-full;
     &:focus {
       @apply outline-none shadow-outline;
@@ -64,12 +64,12 @@ code {
     &:hover { @apply bg-teal-700; }
   }
   &-light {
-    @apply text-black bg-gray-100;
-    &:hover { @apply bg-gray-300; }
+    @apply text--text bg--bg;
+    &:hover { @apply bg--bg-alt; }
   }
   &-dark {
-    @apply text-white bg-gray-800;
-    &:hover { @apply bg-gray-900; }
+    @apply text-white bg--text;
+    &:hover { @apply bg--text-alt; }
   }
 }
 
@@ -178,7 +178,7 @@ h6, .h6 {
 
 /* navbar */
 .navbar {
-  @apply p-4 flex justify-between items-center bg-gray-100;
+  @apply p-4 flex justify-between items-center bg--bg;
   .navbar-section {}
   .navbar-brand {
     @apply mr-2 font-bold text-blue-700 text-3xl;
@@ -200,7 +200,7 @@ h6, .h6 {
 .list-group-item-action {
   @apply cursor-pointer;
   &:hover {
-    @apply bg-gray-100;
+    @apply bg--bg-alt;
   }
 }
 
@@ -220,7 +220,7 @@ h6, .h6 {
   }
   .dropdown-menu {
     @extend .list-group;
-    @apply absolute right-0 top-100 bg-white min-w-full w-56 z-10;
+    @apply absolute right-0 top-100 bg--bg min-w-full w-56 z-10;
     .dropdown-item {
       @extend .list-group-item;
       @extend .list-group-item-action;
