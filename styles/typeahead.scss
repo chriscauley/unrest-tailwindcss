@@ -1,0 +1,24 @@
+.ur-typeahead {
+  .form-control {
+    @apply flex pl-2;
+    input {
+      @apply flex-grow pl-4;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+    &.-focus {
+      @apply mb-3;
+    }
+    .close {
+      cursor: pointer;
+    }
+  }
+  .suggestions {
+    @apply flex flex-wrap;
+    .pill {
+      cursor: pointer;
+    }
+  }
+}

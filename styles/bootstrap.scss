@@ -23,7 +23,7 @@ code {
     shadow
     text--text-alt
     w-full;
-    &:focus {
+    &:focus, &.-focus {
       @apply outline-none shadow-outline;
     }
     &[type=range] {
@@ -92,7 +92,7 @@ code {
 }
 
 .pill {
-  @apply px-2 leading-relaxed;
+  @apply leading-relaxed px-2 text-sm;
 }
 
 .btn.disabled {
