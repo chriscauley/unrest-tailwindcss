@@ -11,14 +11,11 @@
     &.-focus {
       @apply mb-3;
     }
-    .close {
-      cursor: pointer;
-    }
   }
   .suggestions {
     @apply flex flex-wrap;
-    .pill {
-      cursor: pointer;
-    }
+  }
+  .pill {
+    cursor: pointer;
   }
 }
