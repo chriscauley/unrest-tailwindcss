@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 @import "./bootstrap.scss";
+@import "./dropdown.scss";
 @import "./unrest.scss";
 @import "./brands.scss";
+@import "./scrollbar.scss";
 @import "./typeahead.scss";
 
 :root {
@@ -23,6 +25,9 @@
   --border: theme('colors.gray.800');
 }
 
+input, textarea {
+  background: transparent;
+}
 
 *, ::before, ::after {
   border-color: var(--border)
@@ -52,6 +57,6 @@ legend#root__title {
 }
 
 /* error message on validation fail. */
-.has-error .error-detail {
+.has-error .error-detail, .ur-form .form-error {
   @apply text-red-700 text-sm px-2 -my-1;
 }

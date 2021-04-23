@@ -1,0 +1,31 @@
+.ur-dropdown {
+  .ur-popper {
+    @apply z-10;
+  }
+  &__trigger {
+    @extend .btn;
+    @extend .btn-light;
+    @apply cursor-pointer flex items-center;
+    &:after {
+      @apply block ml-2;
+      content: "";
+      border: 0.25rem solid transparent;
+      border-bottom-width: 0;
+      border-top-color: currentColor;
+    }
+  }
+  .dropdown-items {
+    @extend .list-group;
+    @apply bg--bg w-56 z-10;
+    .dropdown-item {
+      @extend .list-group-item;
+      @extend .list-group-item-action;
+      &.disabled {
+        @apply opacity-50 cursor-not-allowed;
+      }
+    }
+  }
+  .dropdown-menu {
+    @apply bg--bg p-4 rounded shadow;
+  }
+}

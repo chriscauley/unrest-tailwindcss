@@ -1,15 +1,19 @@
 body {
   /* stops scrollbar from popping in and out when page height changes */
   overflow-y: scroll;
-  @apply bg-gray-200; // bg-body
+  @apply bg--bg text--text;
 }
 
-html, body, #react-app {
+html, body {
+  height: 100%;
+}
+
+html, body, #react-app, #app {
   min-height: 100%
 }
 
-#react-app {
-  @apply flex flex-col mx-auto bg--bg text--text;
+#react-app, #app {
+  @apply flex flex-col mx-auto
   > .app-content {
     flex-grow: 1;
   }
@@ -147,4 +151,28 @@ blockquote {
 
 .form-group .checkbox > label {
   cursor: pointer;
+}
+
+.fa {
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+.modal {
+  &.-absolute {
+    position: absolute;
+  }
+  &.-relative {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.modal .modal-content {
+  &.-sm {
+    width: theme('screens.sm')
+  }
+  &.-auto {
+    width: auto;
+  }
 }
