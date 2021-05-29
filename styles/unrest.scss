@@ -13,7 +13,7 @@ html, body, #react-app, #app {
 }
 
 #react-app, #app {
-  @apply flex flex-col mx-auto
+  @apply flex flex-col mx-auto;
   > .app-content {
     flex-grow: 1;
   }
@@ -175,4 +175,12 @@ blockquote {
   &.-auto {
     width: auto;
   }
+}
+
+.toast-list {
+  @apply absolute bottom-0;
+  left: 50%;
+  max-width: 100%;
+  transform: translate(-50%, 0);
+  width: 420px;
 }

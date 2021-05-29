@@ -58,5 +58,5 @@ legend#root__title {
 
 /* error message on validation fail. */
 .has-error .error-detail, .ur-form .form-error {
-  @apply text-red-700 text-sm px-2 -my-1;
+  @apply text-red-700 text-sm px-2 -mt-1;
 }
