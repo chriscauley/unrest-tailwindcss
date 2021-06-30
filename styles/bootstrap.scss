@@ -45,6 +45,16 @@ code {
   }
 }
 
+.input-group {
+  @apply relative;
+  &-append {
+    @apply absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
 @mixin button-like() {
   &.-primary, &-primary {
     @apply text-white bg-blue-500;
