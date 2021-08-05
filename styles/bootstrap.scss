@@ -277,13 +277,10 @@ h6, .h6 {
     }
   }
   .modal-content {
-    @apply p-4 bg--bg mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full;
+    @apply bg--bg flex flex-col mx-auto p-4 rounded shadow-lg z-50 overflow-y-auto max-h-full gap-y-4;
   }
   .modal-footer {
-    @apply flex items-center justify-end pt-4;
-    .btn {
-      @apply ml-4;
-    }
+    @apply flex items-center justify-end gap-x-4;
   }
   &.absolute {
     @apply absolute;

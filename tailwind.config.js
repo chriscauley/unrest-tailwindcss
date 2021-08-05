@@ -11,7 +11,10 @@ colors.forEach(c => var_colors['-'+c] = `var(--${c})`)
 
 // tailwind.config.js
 module.exports = {
-  purge: false,
+  purge: {
+    enabled: true,
+    content: []
+  },
   theme: {
     extend: {
       colors: var_colors,
