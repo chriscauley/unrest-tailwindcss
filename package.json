@@ -7,10 +7,11 @@
   "author": "chriscauley",
   "license": "MIT",
   "scripts": {
-    "build": "npx tailwindcss build styles/index.scss -o dist.css",
-    "watch": "npx tailwindcss build styles/index.scss -o dist.css -w"
+    "build": "yarn parcel build styles/index.scss -o dist.css -d .",
+    "watch": "yarn parcel watch styles/index.scss -o dist.css -d ."
   },
   "devDependencies": {
+    "parcel": "^1.12.4",
     "postcss-modules": "^1.5.0",
     "sass": "^1.26.3",
     "tailwindcss": "1.8.13"
