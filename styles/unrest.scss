@@ -188,3 +188,20 @@ blockquote {
 .unrest-floating-actions {
   @apply fixed bottom-0 right-0 m-4 flex gap-2 text-lg;
 }
+
+.text-success {
+  @apply text-green-800;
+}
+
+.text-danger {
+  @apply text-red-800;
+}
+
+.unrest-auth-social {
+  &__or {
+    @apply flex justify-center mb-4;
+  }
+  &__buttons {
+    @apply flex justify-center gap-x-4;
+  }
+}
