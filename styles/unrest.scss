@@ -1,6 +1,7 @@
 body {
   /* stops scrollbar from popping in and out when page height changes */
   overflow-y: scroll;
+  overflow-x: hidden;
   @apply bg--bg text--text;
 }
 
