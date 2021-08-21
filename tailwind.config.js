@@ -13,7 +13,7 @@ colors.forEach(c => var_colors['-'+c] = `var(--${c})`)
 module.exports = {
   purge: {
     enabled: true,
-    content: []
+    content: ['styles/no-purge.html']
   },
   theme: {
     extend: {

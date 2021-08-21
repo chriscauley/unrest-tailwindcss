@@ -5,9 +5,8 @@
   &__trigger {
     @extend .btn;
     @extend .btn-light;
-    @apply cursor-pointer flex items-center;
+    @apply flex items-center;
     &:after {
-      @apply block ml-2;
       content: "";
       border: 0.25rem solid transparent;
       border-bottom-width: 0;

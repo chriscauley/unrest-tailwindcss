@@ -98,7 +98,7 @@ code {
 }
 
 .btn {
-  @apply font-bold py-2 px-4 rounded cursor-pointer select-none leading-normal;
+  @apply font-bold py-2 px-4 rounded cursor-pointer select-none leading-normal inline-flex gap-x-2;
   @include button-like();
 }
 
