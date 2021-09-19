@@ -101,7 +101,11 @@ ul.browser-default a,
 ol.browser-default a,
 .markdown a {
   @apply text-blue-500 cursor-pointer;
+  &.router-link-exact-active {
+    @apply underline;
+  }
 }
+
 
 p > a {
   @apply underline
@@ -188,6 +192,10 @@ blockquote {
 
 .unrest-floating-actions {
   @apply fixed bottom-0 right-0 m-4 flex gap-2 text-lg;
+  &.-left {
+    @apply left-0;
+    right: unset;
+  }
 }
 
 .text-success {
