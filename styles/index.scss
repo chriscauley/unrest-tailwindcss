@@ -25,8 +25,9 @@
   --border: theme('colors.gray.800');
 }
 
-input, textarea {
+input, textarea, select {
   background: transparent;
+  color: var(--text);
 }
 
 *, ::before, ::after {
