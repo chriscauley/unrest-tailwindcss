@@ -73,8 +73,8 @@ code {
     &:hover { @apply bg-red-800; }
   }
   &.-warning, &-warning {
-    @apply text-black bg-yellow-500;
-    &:hover { @apply bg-yellow-700; }
+    @apply bg-yellow-600;
+    &:hover { @apply bg-yellow-800; }
   }
   &.-info, &-info {
     @apply text-white bg-teal-500;
