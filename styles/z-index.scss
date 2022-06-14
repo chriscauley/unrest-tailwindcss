@@ -1,0 +1,18 @@
+.modal.-relative {
+  z-index: 1;
+}
+
+.dropdown .dropdown-menu,
+.ur-dropdown .ur-popper,
+.ur-dropdown .dropdown-items,
+.snackbar {
+  z-index: 10;
+}
+
+.modal, .modal .modal-content {
+  z-index: 50;
+}
+
+.toast-list {
+  z-index: 100;
+}

@@ -79,7 +79,7 @@ html, body, #react-app, #app {
 }
 
 .snackbar {
-  @apply fixed bottom-0 left-0 w-full z-10;
+  @apply fixed bottom-0 left-0 w-full;
   .container {
     @apply px-2 m-auto;
   }
@@ -169,7 +169,6 @@ blockquote {
   }
   &.-relative {
     position: relative;
-    z-index: 1;
   }
 }
 

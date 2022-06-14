@@ -1,7 +1,4 @@
 .ur-dropdown {
-  .ur-popper {
-    @apply z-10;
-  }
   &__trigger {
     @extend .btn;
     @extend .btn-light;
@@ -15,7 +12,7 @@
   }
   .dropdown-items {
     @extend .list-group;
-    @apply bg--bg w-56 z-10;
+    @apply bg--bg w-56;
     .dropdown-item {
       @extend .list-group-item;
       @extend .list-group-item-action;
