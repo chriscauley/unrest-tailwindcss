@@ -109,14 +109,18 @@ code {
 }
 
 .badge, .pill {
-  @apply rounded-full inline-flex items-center justify-center gap-1;
+  @apply rounded-full inline-flex items-center justify-center gap-1 text-sm;
   min-width: 1.5em;
   min-height: 1.5em;
   @include button-like()
 }
 
 .pill {
-  @apply leading-relaxed px-2 text-sm;
+  @apply leading-relaxed px-2;
+}
+
+.badge {
+  @apply px-1;
 }
 
 .btn.disabled {

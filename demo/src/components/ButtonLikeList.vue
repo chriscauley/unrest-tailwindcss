@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h2>.{{ type }}.-${variant}</h2>
     <div v-for="button in buttons" :key="button" class="story-row">
-      <div :class="button">{{ button }}</div>
+      <div :class="button">{{ text || button }}</div>
     </div>
   </div>
 </template>
@@ -22,9 +23,13 @@ const button_types = [
 ]
 
 export default {
+  props: {
+    type: String,
+    text: String,
+  },
   computed: {
     buttons() {
-      return button_types.map(t => `btn -${t}`)
+      return button_types.map(t => `${this.type} -${t}`)
     }
   }
 }
