@@ -19,6 +19,13 @@
       &.disabled {
         @apply opacity-50 cursor-not-allowed;
       }
+      &.-text {
+        font-weight: normal;
+        cursor: default;
+        &:hover {
+          background: transparent;
+        }
+      }
     }
   }
   .dropdown-menu {
