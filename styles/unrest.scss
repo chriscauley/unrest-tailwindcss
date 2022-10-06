@@ -217,3 +217,7 @@ blockquote {
 .unrest-grid {
   @apply flex gap-x-4 items-center;
 }
+
+.unrest-checkboxes {
+  @apply flex flex-wrap gap-2;
+}

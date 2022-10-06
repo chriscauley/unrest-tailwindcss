@@ -241,7 +241,7 @@ h6, .h6 {
 }
 
 .list-group-item {
-  @apply border-b px-5 py-3 flex items-center justify-between;
+  @apply border-b gap-2 px-5 py-3 flex items-center justify-between;
   &:last-child {
     @apply border-b-0;
   }
