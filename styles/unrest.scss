@@ -99,31 +99,56 @@ html, body, #react-app, #app {
 p > a,
 ul.browser-default a,
 ol.browser-default a,
-.markdown a {
+.unrest-markdown a {
   @apply text-blue-500 cursor-pointer;
   &.router-link-exact-active {
     @apply underline;
   }
 }
 
+.unrest-markdown {
+  h1, .h1 {
+    @apply mt-8;
+  }
+  h2, .h2 {
+    @apply mt-4;
+  }
+  h3, .h3 {
+    @apply mt-4;
+  }
+  h4, .h4 {
+    @apply mt-2;
+  }
+  h5, .h5 {
+    @apply mt-2;
+  }
+  h6, .h6 {
+    @apply mt-1;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    &:first-child {
+      @apply mt-0;
+    }
+  }
+}
 
 p > a {
   @apply underline
 }
 
-.markdown ul,
+.unrest-markdown ul,
 ul.browser-default {
   @apply list-disc;
 }
 
-.markdown ol,
+.unrest-markdown ol,
 ol.browser-default {
   @apply list-decimal;
 }
 
-.markdown ul,
+.unrest-markdown ul,
 ul.browser-default,
-.markdown ol,
+.unrest-markdown ol,
 ol.browser-default {
   @apply list-inside;
   li {
@@ -172,13 +197,21 @@ blockquote {
   }
 }
 
+@mixin modal-size($size, $theme) {
+  .modal .modal-content.-#{$size}, .modal.-#{$size} .modal-content {
+    width: $theme;
+  }
+}
+
+@include modal-size(sm, theme('screens.sm'));
+@include modal-size(sm, theme('screens.md'));
+@include modal-size(sm, theme('screens.lg'));
+@include modal-size(sm, theme('screens.xl'));
+@include modal-size(sm, theme('screens.2xl'));
+@include modal-size(auto, auto);
+
 .modal .modal-content {
-  &.-sm {
-    width: theme('screens.sm')
-  }
-  &.-auto {
-    width: auto;
-  }
+  max-width: 100%;
 }
 
 .toast-list {
