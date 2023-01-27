@@ -1,7 +1,7 @@
 {
   "name": "@unrest/tailwind",
   "description": "Sharable tailwind config for my personal projects",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "repository": "http://github.com/chriscauley/unrest-react-jsonschema-form.git",
   "main": "index.js",
   "author": "chriscauley",
