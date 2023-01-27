@@ -12,12 +12,18 @@
   }
   .dropdown-items {
     @extend .list-group;
-    @apply bg--bg w-56;
+    @apply bg--bg text--text;
+    min-width: 16rem;
+    font-weight: normal;
+    text-transform: initial;
     .dropdown-item {
       @extend .list-group-item;
       @extend .list-group-item-action;
       &.disabled {
         @apply opacity-50 cursor-not-allowed;
+      }
+      &__text {
+        @apply flex-grow;
       }
       &.-text {
         font-weight: normal;
@@ -29,6 +35,8 @@
     }
   }
   .dropdown-menu {
-    @apply bg--bg p-4 rounded shadow;
+    @apply bg--bg p-4 rounded shadow text--text;
+    font-weight: unset;
+    text-transform: unset;
   }
 }
