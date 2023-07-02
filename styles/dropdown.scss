@@ -40,3 +40,13 @@
     text-transform: unset;
   }
 }
+.ur-dropdown .dropdown-items .form-group {
+  @apply border-b flex items-center gap-4 m-0 px-4 py-2;
+  min-height: 3.5rem;
+  &:last-child {
+    @apply border-0;
+  }
+  &____root {
+    @apply border-0 block p-0;
+  }
+}
